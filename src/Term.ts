@@ -38,7 +38,7 @@ class Term {
       });
     }
 
-    const status = await exec("yarn run size-limit --json", [], {
+    const status = await exec("yarn -s run size-limit --json", [], {
       windowsVerbatimArguments,
       ignoreReturnCode: true,
       listeners: {
