@@ -38,7 +38,7 @@ class Term {
       });
     }
 
-    const status = await exec("npx size-limit --json", [], {
+    const status = await exec("yarn run --silent size-limit --json", [], {
       windowsVerbatimArguments,
       ignoreReturnCode: true,
       listeners: {
