@@ -10592,7 +10592,7 @@ class Term {
                     cwd: directory
                 });
             }
-            const status = yield exec_1.exec("yarn run size-limit --json", [], {
+            const status = yield exec_1.exec("yarn run --silent size-limit --json", [], {
                 windowsVerbatimArguments,
                 ignoreReturnCode: true,
                 listeners: {
